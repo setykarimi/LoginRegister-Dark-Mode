@@ -1,16 +1,21 @@
 @font-face {
   font-family: "vazir-blod";
-  src: url(./font/Vazir-Bold.ttf);
+  src: url(../fonts/Vazir-Bold.ttf);
 }
 
 @font-face {
   font-family: "vazir-light";
-  src: url(./font/Vazir-Light.ttf);
+  src: url(../fonts/Vazir-Light.ttf);
 }
 
 @font-face {
   font-family: "vazir-medium";
-  src: url(./font/Vazir-Medium.ttf);
+  src: url(../fonts/Vazir-Medium.ttf);
+}
+
+@font-face {
+  font-family: "vazir";
+  src: url(../fonts/Vazir.ttf);
 }
 
 /* SCSS HEX */
@@ -19,6 +24,7 @@
 body {
   font-family: "vazir" !important;
   direction: rtl;
+  background: url(/back.jpg);
   background-color: rgba(255, 255, 255, 0.26);
   background-attachment: fixed;
   background-size: cover;
@@ -197,4 +203,4 @@ body .modalPopup .topLogo {
           box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   margin-bottom: 3em;
 }
-/*# sourceMappingURL=app.css.map */
+/*# sourceMappingURL=style.css.map */
