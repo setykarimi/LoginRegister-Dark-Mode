@@ -24,7 +24,7 @@ const Login = (props) => {
                                     <Row className="d-flex justify-content-start">
                                         <Col xl={2} lg={2} md={2} sm={2} className="my-4">
                                             <BootstrapSwitchButton checked={true} onChange={setDark} onstyle="secondary"
-                                                onlabel=" " offlabel=" " />
+                                                onlabel=" " offlabel=" " height="2em"/>
                                         </Col>
                                     </Row>
 
