@@ -1,12 +1,22 @@
-import React from 'react';
-import Form from './components/Form'
-const isLogin = false;
+import { React } from 'react';
+import Login from './components/Login';
+import Register from './components/Register';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+
+
+
+
 
 const App = () => {
-  return (<Form title={isLogin}
-    isLogin={isLogin}
-    isLoginForm={isLogin}
-  />)
+ 
+  return (
+    <Router>
+      <Switch>
+        <Route exact path='/' component={Login}></Route>
+        <Route exact path='/register' component={Register}></Route>
+      </Switch>
+    </Router>
+  )
 }
 
 export default App
