@@ -28,16 +28,60 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-  overflow-y: hidden;
+  overflow-y: auto;
   ::selection {
     background-color: $red-light;
     color: $dark;
   }
 
+  .form-check .form-check-input {
+    float: right !important;
+    margin-left: 0.5em;
+    &:focus {
+      box-shadow: none !important;
+      border: $red-light !important;
+    }
+    &:checked {
+      background: $red-light !important;
+      border-color: transparent!important;
+    }
+  }
+
+  .switch.btn {
+    min-width: 2.7rem;
+  }
+  .switch-handle {
+    margin-top: -0.5em;
+    width: 1.2em;
+    height: 1em;
+    border-radius:.3em;
+    margin-right: 1.6em;
+    padding: 0;
+  }
+  .switch-on.btn {
+    padding-right: 0;
+  }
+  
+  .switch-on {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 3.6em;
+    right: 1.3em;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    background-color: #555;
+    background: #555;
+    z-index: 1;
+    width: 1.2em;
+    height: 1.1em;
+    border-radius: 0.3em;
+  }
   .loginForm {
     .outBox {
       background-color: $dark;
-      padding: 4em 2em 4em 2em;
+      padding: 2em 2em 4em 2em;
       margin: 2em auto;
 
       @media (max-width: 576px) {
@@ -59,6 +103,13 @@ body {
           font-family: "vazir-blod";
           margin-bottom: 1em;
         }
+        a {
+          all: unset;
+          color: $red;
+          text-align: center;
+          margin: 1em auto;
+          cursor: pointer;
+        }
 
         input[type="text"],
         input[type="password"] {
@@ -67,7 +118,8 @@ body {
           transition: 0.2s ease;
           font-family: "vazir-medium";
           color: #707070;
-          text-align: left;
+          text-align: right;
+          padding: 0.5em 0;
           &:focus {
             border-bottom: 2px solid $red-light;
           }
